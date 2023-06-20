@@ -16,9 +16,9 @@ $movie1 = new Movie("Action");
 $movie1 ->titolo = "Terminator";
 
 
-// $movie2 = new Movie();
-// $movie2 ->titolo = "Jumanji";
-// $movie1 ->genere = "Adventure";
+$movie2 = new Movie();
+$movie2 ->titolo = "Jumanji";
+$movie2 ->genere = "Adventure";
 
 
 
