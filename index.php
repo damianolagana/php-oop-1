@@ -4,21 +4,23 @@ class Movie {
     public $titolo;
     public $genere;
 
-    function __construct($_item) {
-        $this->genere = $_item;
+    function __construct($_item1,$_item2) {
+        $this->titolo = $_item1;
+        $this->genere = $_item2;
+
+
     }
 
  
 }
 
 
-$movie1 = new Movie("Action");
-$movie1 ->titolo = "Terminator";
+$movie1 = new Movie("Terminator","Action");
 
 
-$movie2 = new Movie();
-$movie2 ->titolo = "Jumanji";
-$movie2 ->genere = "Adventure";
+
+$movie2 = new Movie("Jumanji","Adventure");
+
 
 
 
@@ -36,7 +38,9 @@ $movie2 ->genere = "Adventure";
     <div>
         <h2>Movie1</h2>
         <ul>
+            <li><?php echo $movie1 ->titolo ?></li>
             <li><?php echo $movie1 ->genere ?></li>
+
         </ul>
     </div>
     <div>
